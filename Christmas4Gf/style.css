@@ -85,6 +85,10 @@ html, body {
   text-decoration: none;
   box-shadow: 0 8px 24px rgba(198, 40, 40, 0.35);
   transition: transform 120ms ease, box-shadow 120ms ease;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 .cta:hover { transform: translateY(-2px); }
 
@@ -148,6 +152,10 @@ figcaption {
   font-weight: 600;
   box-shadow: 0 8px 26px rgba(46, 125, 50, 0.35);
   cursor: pointer;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 .gift-content.hidden { display: none; }
 .gift-content .card {
@@ -178,7 +186,34 @@ figcaption {
 }
 
 /* Responsive tweaks */
+@media (max-width: 768px) {
+  .hero { padding: 4rem 1.5rem 2rem; }
+  .greeting { font-size: clamp(2rem, 8vw, 3.5rem); }
+  .sub { font-size: 0.95rem; margin: 0.5rem auto 1.5rem; }
+  .countdown { gap: 0.8rem; margin: 1rem 0 1.5rem; }
+  .time-box { min-width: 80px; padding: 0.8rem 0.9rem; }
+  .cta { padding: 0.8rem 1.5rem; font-size: 1rem; }
+  .gallery { padding: 2rem 1.5rem 3rem; }
+  .grid { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 0.8rem; }
+  figure img { height: 160px; }
+  .gift { padding: 2rem 1.5rem 4rem; }
+  .unwrap { padding: 1rem 1.5rem; }
+}
+
 @media (max-width: 480px) {
-  .time-box { min-width: 74px; padding: 0.7rem 0.8rem; }
-  figure img { height: 150px; }
+  .hero { padding: 3rem 1rem 2rem; }
+  .greeting { font-size: clamp(1.8rem, 10vw, 3rem); }
+  .sub { font-size: 0.9rem; margin: 0.5rem auto 1rem; }
+  .countdown { gap: 0.6rem; margin: 0.5rem 0 1rem; flex-wrap: wrap; justify-content: center; }
+  .time-box { min-width: 70px; padding: 0.6rem 0.7rem; font-size: 0.9rem; }
+  .time-box span { font-size: 1.5rem; }
+  .time-box label { font-size: 0.75rem; }
+  .cta { padding: 0.75rem 1.2rem; font-size: 0.95rem; }
+  .gallery { padding: 1.5rem 1rem 2rem; }
+  .grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 0.6rem; }
+  figure img { height: 120px; }
+  figcaption { font-size: 0.85rem; padding: 0.5rem 0.7rem; }
+  .gift { padding: 1.5rem 1rem 3rem; }
+  .unwrap { padding: 0.9rem 1.2rem; font-size: 0.95rem; }
+  .footer { padding: 1.5rem 1rem 2rem; }
 }
