@@ -1,5 +1,5 @@
 // Personalized name
-document.getElementById('herName').textContent = 'Your Girlfriend\'s Name';
+document.getElementById('herName').textContent = 'Joanah';
 
 // Countdown to Christmas (local time)
 (function setupCountdown() {
