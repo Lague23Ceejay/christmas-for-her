@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-eval';" />
   <title>Merry Christmas, Love 🎄</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -28,11 +29,11 @@
         <span id="seconds">00</span><label>Seconds</label>
       </div>
     </div>
-    <a href="#gallery" class="cta">See our memories</a>
+    <button id="seeMemories" class="cta">See our memories</button>
   </header>
 
   <!-- Photo Gallery -->
-  <section id="gallery" class="gallery">
+  <section id="gallery" class="gallery hidden">
     <h2>Our moments, wrapped in love</h2>
     <div class="grid">
       <!-- Replace src with your images -->

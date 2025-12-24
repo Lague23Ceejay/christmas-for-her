@@ -31,6 +31,18 @@ document.getElementById('herName').textContent = 'Your Girlfriend\'s Name';
   setInterval(update, 1000);
 })();
 
+// Gallery toggle
+document.getElementById('seeMemories').addEventListener('click', () => {
+  const gallery = document.getElementById('gallery');
+  const button = document.getElementById('seeMemories');
+  gallery.classList.toggle('hidden');
+  if (gallery.classList.contains('hidden')) {
+    button.textContent = 'See our memories';
+  } else {
+    button.textContent = 'Hide memories';
+  }
+});
+
 // Gift reveal
 document.getElementById('unwrapBtn').addEventListener('click', () => {
   const box = document.getElementById('giftContent');
