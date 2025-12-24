@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Merry Christmas, Love 🎄</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Snow canvas -->
+  <canvas id="snow"></canvas>
+
+  <!-- Header / Hero -->
+  <header class="hero">
+    <h1 class="greeting">Merry Christmas, <span id="herName">[Her Name]</span> ✨</h1>
+    <p class="sub">You make every season brighter.</p>
+    <div class="countdown">
+      <div class="time-box">
+        <span id="days">00</span><label>Days</label>
+      </div>
+      <div class="time-box">
+        <span id="hours">00</span><label>Hours</label>
+      </div>
+      <div class="time-box">
+        <span id="minutes">00</span><label>Minutes</label>
+      </div>
+      <div class="time-box">
+        <span id="seconds">00</span><label>Seconds</label>
+      </div>
+    </div>
+    <a href="#gallery" class="cta">See our memories</a>
+  </header>
+
+  <!-- Photo Gallery -->
+  <section id="gallery" class="gallery">
+    <h2>Our moments, wrapped in love</h2>
+    <div class="grid">
+      <!-- Replace src with your images -->
+      <figure>
+        <img src="images/wher4.jpeg" alt="Memory 1" />
+        <figcaption>First meeting you</figcaption>
+      </figure>
+      <figure>
+        <img src="images/wher1.jpg" alt="Memory 2" />
+        <figcaption>At your place</figcaption>
+      </figure>
+      <figure>
+        <img src="images/wher2.jpeg" alt="Memory 3" />
+        <figcaption>You're so sweet I could kiss you all day</figcaption>
+      </figure>
+      <figure>
+        <img src="images/her.jpeg" alt="Memory 4" />
+        <figcaption>You're so Gorgeous, I wanna take you on a date rn</figcaption>
+      </figure>
+      <figure>
+        <img src="images/solo.jpeg" alt="Memory 5" />
+        <figcaption>Cute</figcaption>
+      </figure>
+      <figure>
+        <img src="images/wher5.jpg" alt="Memory 6" />
+        <figcaption>Photo Booth</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Gift Reveal -->
+  <section class="gift">
+    <h2>Unwrap your surprise 🎁</h2>
+    <button id="unwrapBtn" class="unwrap">Tap to unwrap</button>
+    <div id="giftContent" class="gift-content hidden">
+      <div class="card">
+        <h3>My Christmas letter to you</h3>
+        <p>
+          Hi Babii, thank you for every smile, every kindness, and every moment we share.
+          Thank you for making me smile bab. Here’s to more cozy nights, new adventures,
+          and a lifetime of little miracles together.
+          Merry Christmas my Love. ❤️
+        </p>
+        <!-- Optional: add a video link or image -->
+        <!-- <a class="video" href="https://your-video-link" target="_blank">Play our video</a> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Made with love by Cj🎄</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
